@@ -1,0 +1,116 @@
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    color: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+:root {
+    --bg-primary: #FF7500 ;
+    --bg-secondary: #3D4E5A ;
+    --bg-third: #F4F4F4;
+
+
+    --primary-text: ;
+    --secondary-text: ;
+
+}
+
+
+/* utilities class */
+
+.container {
+    max-width: 990px; 
+    margin: 0 auto;
+    padding: 0px 15px;
+}
+
+.flex {
+    display: flex;
+}
+
+
+.jc-sb {
+    justify-content: space-between;
+}
+
+/* header  */
+
+/* utility Bar */
+
+.utility-bar {
+    width: 100%;
+    height: 29.01px;
+    background-color: var(--bg-secondary);
+    position: fixed;
+}
+
+.utility-bar .container {
+    align-items: center;
+    line-height: 29px;
+}
+
+
+.utility-bar-l  {
+    height: 29.01px;
+    position: relative;
+}
+.utility-bar-l p {
+    color: #FFF;
+    font-size: 12.269px;
+}
+
+.aydua-btn {
+    background-color: var(--bg-primary);
+    width: 57.99px;
+    height: 28.03px;
+
+    padding: 0px 10px;
+}
+.ml-15 {
+    margin: 0px 15px;
+}
+
+.ub-l-r{
+    margin-left: 15px;
+    padding-left: 4px;
+    border-left: 1px solid white;
+}
+
+.utility-bar-r {
+    height: 28.92px;
+    border-left: 1px solid white;
+    padding-left: 5px;
+    padding-right: 8px;
+    gap: 15px
+}
+
+.utility-bar-r div.flex {
+    align-items: center;
+}
+
+.utility-bar-r p, .utility-bar-r div.flex p, div.flex svg {
+    font-size: 11.567px;
+}
+
+.utility-bar-r div {
+    gap: 10px;
+}
+
+/* Logo Gar */
+
+.logo-bar {
+    width: 100%;
+    background-color: var(--bg-third);
+
+    padding-block: 20px;
+}
+
+.logo-bar-r {
+    justify-content: end;
+}
+
