@@ -1,0 +1,94 @@
+
+
+
+
+
+
+/*  */
+
+@media screen and (max-width: 840px) {
+    
+
+    .nav-links a, .search-form {
+        font-size:  11px;
+        padding-right: 8px;
+    }
+
+    .nav-links {
+        justify-content: space-between;
+    }
+
+    /* navigation */
+    .search-form {
+        gap: 5px;
+    }
+    
+    .search-form .input {
+        width: 100px;
+        height: 25px;
+        font-size: 11px;
+        padding-left: 5px;
+    }
+    
+    .search-form button {
+        height: 25px;
+    }
+}
+
+
+/*  */
+
+@media screen and (max-width: 600px) {
+    
+    .logo-bar-r-img {
+        display: none;
+    }
+
+    .burger {
+        display: flex;
+        position: absolute;
+        padding-right: 15px;
+
+    }
+}
+
+
+/* mobile responsive */
+
+@media screen and (max-width: 425px) {
+    
+    nav {
+        display: none;
+    }
+    main {
+        padding-top: calc(195px - 55.96px) ;
+    }
+
+
+    /* ---hero-section---  */
+
+    .four-column-section .container {
+        padding: 0px 0px;
+        margin: 0px 25px;
+    }
+    .left-arrow, .right-arrow {
+        position: absolute;
+        width: 40px;
+    }
+
+
+
+    /* second-slider-section */
+
+    .main-div .container {
+        flex-direction: column;
+    }
+    /* .secon-cards {
+        width: 100%;
+    }*/
+
+
+    .BUSCAR {
+        width: 100%
+    } 
+}
