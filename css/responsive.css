@@ -35,6 +35,41 @@
     }
 }
 
+/* tablet 768px */
+@media screen and (max-width: 768px) {
+
+
+
+
+    /* noticias */
+    .noticias {
+        flex-direction: column;
+    }
+    .noticias-div {
+        width: 100%;
+    }
+    
+    .noticias-div.flex {
+        justify-content: center;
+    }
+    .noticias-div img {
+        width: 310px;
+        margin: 0px auto;
+    }
+
+    .noticias-content {
+        width: 310px;
+    }
+
+    .noticias-btn-wraper {
+        text-align: right;
+        padding: 10px 0px;
+    }
+    .events {
+        margin-top: 10px;
+        align-self: flex-start;
+    }
+}
 
 /*  */
 
@@ -86,9 +121,162 @@
     /* .secon-cards {
         width: 100%;
     }*/
-
+    .buscar-submit-btn {
+        width: 288px;
+    }
 
     .BUSCAR {
-        width: 100%
+        width: 100%;
+        margin-top: 10px;
     } 
+
+    /* Noticias section */
+
+    .noticias {
+        flex-direction: column;
+    }
+    .noticias-div.flex {
+        flex-direction: column;
+        justify-content: center;
+    }
+    .noticias-div img {
+        width: 310px;
+        margin: 0px auto;
+    }
+
+    .noticias-content {
+        width: 310px;
+    }
+
+    .noticias-btn-wraper {
+        text-align: right;
+        padding: 10px 0px;
+    }
+
+    .events {
+        width: 100%;
+    }
+
+    /* news-letter-section */
+    .news-img-wraper {
+        display: none;
+    }
+    .main-sub-right.news-wraper {
+        width: 100%;
+    }
+
+    /* banner-section */
+    .banner-wraper.container {
+        flex-direction: column;
+        gap: 10px;
+    }
+    .banner-slider.wraper  {
+        width: 100%;
+    }
+    .banner-slider {
+        margin-top: 10px;
+        margin-right: 0px !important;
+    }
+
+    .main-sub-left {
+        width: 100%;
+        
+    }
+
+    .twitter-ifram {
+        width: 100%;
+    }
+    /*Gallery section  */
+    .gallary-wraper {
+        flex-direction: column-reverse;
+        gap: 70px;
+        margin-top: 10px;
+    }
+
+    .img-gallery {
+        flex-direction: column-reverse;
+        padding-bottom: 210px;
+    }
+    .img1 {
+        width: 345px;
+        height: 300px;
+    }
+
+    .img1 {
+        width: 300px;
+        height: 120px;
+        position: absolute;
+        left: 10%;
+        top: 45%;
+    }
+   
+    .calender {
+        width: 320px !important;
+    }
+
+    /* CTA-section  */
+    .cta-container {
+        flex-direction: column;
+    }
+    .cta-cards {
+        gap: 20px;
+        height: auto;
+    }
+    .cta-card {
+        width:100%;
+    }
+
+    .c-3, .c-4 {
+        box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.521);
+    }
+    .c-6 {
+        box-shadow: 0px 0px 0px var(--bg-primary);
+    }
+
+    .cta-right {
+        
+        border: none;
+        border-top: 1px solid white;
+    }
+    .border-b{
+        border-bottom: 0px solid white;
+    }
+
+    /* === Footer === */
+    .footer {
+        flex-direction: column-reverse;
+        padding: 10px 15px;
+    }
+    .footer-content {
+        width: 100%;
+        flex-direction: column;
+        gap: 20px
+    }
+    
+    .footer-content p {
+        font-family: Helvetica;
+        font-size: 11.893px;
+        cursor: pointer;
+    }
+    .footer-logo {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+
+
+    /* ============ other Utility classes start ===================== */
+
+    .main-sub-left {
+        width: 100%;
+        
+    }
+
+    .main-sub-right {
+        width: 100%
+    }
+
+    /* ============ other Utility classes end ===================== */
+
+
 }
