@@ -191,6 +191,7 @@
         flex-direction: column-reverse;
         gap: 70px;
         margin-top: 10px;
+        padding-top: 85px;
     }
 
     .img-gallery {
@@ -212,6 +213,15 @@
    
     .calender {
         width: 320px !important;
+    }
+    .xyz {
+        width: 100%;
+        position: relative;
+        left: 10px;
+        top: -97px;
+    }
+    .main-sub-right.calender {
+        width: 100% !important;
     }
 
     /* CTA-section  */

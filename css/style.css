@@ -161,13 +161,6 @@ header {
     justify-content: end;
     cursor: pointer;
 }
-.logo-bar-r-img, .logo-logo-bar {
-    transition: filter 0.2s ease-in;
-}
-
-.logo-logo-bar:hover, .logo-bar-r-img:hover {
-    filter: drop-shadow(0 0 1rem var(--bg-primary));
-}
 
 /* ---- Navigation Bar ------- */
 
@@ -196,7 +189,6 @@ nav .container {
     transition: color 0.2s ease-out;
 
     padding-right: 18px;
-
 }
 
 .nav-links a:hover {
@@ -238,11 +230,12 @@ nav .container {
 
     transition: all 0.2s linear;
 
-    /* visibility: hidden; Change display to visibility */
+    visibility: hidden;  /* Change display to visibility */
 }
-/* nav:hover .sub-nav{
+nav:hover .sub-nav{
     opacity: 1;
-} */
+    visibility: visible;
+}
 .primary-underline {
     color: #fff;
     font-family: Helvetica;
@@ -849,6 +842,7 @@ select.drop-down {
 .gallary-wraper {
     align-items: flex-start !important;
     position: relative;
+    justify-content: flex-start !important;
 }
 
 .img-gallery {
@@ -876,8 +870,7 @@ select.drop-down {
     width: 252.32px;
 }
 .calender {
-    height: 100px;
-    /* width: 100%; */
+    height: auto;
     position: absolute;
     right: 10px;
     top: 10px
@@ -964,7 +957,7 @@ select.drop-down {
     padding: 10px 0px;
 }
 
-.cta-card:hover, .c-6 {
+.cta-card:hover {
     box-shadow: 1px 1px 8px var(--bg-primary);
 }
 
@@ -1024,7 +1017,7 @@ select.drop-down {
     align-items: flex-start;
 }
 
-.email p {
+.email a {
     font-family: Helvetica;
     font-size: 12px;
     font-style: normal;
@@ -1035,6 +1028,11 @@ select.drop-down {
     border-bottom: 1px solid white;
 }
 
+.cta-r-heading:hover, .cta-r-title:hover,
+.cta-p-number:hover, .cta-number:hover, .no-class:hover,
+.email a:hover {
+    text-decoration: underline;
+}
 /* ==== Companies Section  */
 .companies-logo {
      

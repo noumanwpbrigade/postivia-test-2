@@ -1,25 +1,25 @@
 // Third/-companies Slider
-// var swiper = new Swiper(".mySwiper", {
-//   spaceBetween: 30,
-//   pagination: {
-//     el: ".swiper-pagination",
-//     clickable: true,
-//   },
-//   breakpoints: {
-//     320: {
-//       slidesPerView: 2.25,
-//       spaceBetween: 17
-//     },
-//     480: {
-//       slidesPerView: 2,
-//       spaceBetween: 17
-//     },
-//     768: {
-//       slidesPerView: 5,
-//       spaceBetween: 17
-//     },
-//   }
-// });
+var swiper = new Swiper(".mySwiper", {
+  spaceBetween: 30,
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  },
+  breakpoints: {
+    320: {
+      slidesPerView: 2.25,
+      spaceBetween: 17
+    },
+    480: {
+      slidesPerView: 2,
+      spaceBetween: 17
+    },
+    768: {
+      slidesPerView: 5,
+      spaceBetween: 17
+    },
+  }
+});
 // second slider
 
  /* ========
