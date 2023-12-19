@@ -1,4 +1,21 @@
 
+
+
+
+/* Desktop: Hide Navigation arrows and dots */
+
+@media screen and (min-width: 1000px) {
+  .swiper-button-prev, .swiper-button-next {
+    visibility: hidden;
+  }
+  /* dots */
+.swiper-pagination-bullet-active,.swiper-pagination-bullet {
+  visibility: hidden;
+}
+
+/* Navigation Style */
+
+}
 .swiper {
   width: 100%;
   height: 100%;

@@ -1,3 +1,41 @@
+// noticias slider 
+// let swiperNOticias = new Swiper(".mySwipernoticias", {
+//   slidesPerView: 1,
+//   // spaceBetween: 10,
+
+//   hashNavigation: {
+//     watchState: true,
+//   },
+
+//   pagination: {
+//     el: ".swiper-pagination",
+//     clickable: true,
+//   },
+
+//   navigation: {
+//     nextEl: ".swiper-button-next-noticias",
+//     prevEl: ".swiper-button-prev-noticias",
+//   },
+
+//   breakpoints: {
+//     320: {
+//       slidesPerView: 1,
+//       spaceBetween: 5
+//     },
+//     480: {
+//       slidesPerView: 1,
+//       spaceBetween: 5
+//     },
+//     768: {
+//       slidesPerView: 1,
+//       spaceBetween: 5
+//     },
+//   }
+// });
+
+
+
+
 // Third/-companies Slider
 var swiper = new Swiper(".mySwiper", {
   spaceBetween: 30,
@@ -11,11 +49,11 @@ var swiper = new Swiper(".mySwiper", {
       spaceBetween: 17
     },
     480: {
-      slidesPerView: 2,
+      slidesPerView: 3,
       spaceBetween: 17
     },
     768: {
-      slidesPerView: 5,
+      slidesPerView: 4,
       spaceBetween: 17
     },
   }
@@ -121,7 +159,7 @@ var swiper = new Swiper('.swiper', {
 // First Slider
 var swiper = new Swiper(".mySwiper1", {
   slidesPerView: 1,
-  spaceBetween: 10,
+  spaceBetween: 5,
 
   hashNavigation: {
     watchState: true,
@@ -140,15 +178,15 @@ var swiper = new Swiper(".mySwiper1", {
   breakpoints: {
     320: {
       slidesPerView: 1,
-      spaceBetween: 17
+      spaceBetween: 5
     },
     480: {
       slidesPerView: 2,
-      spaceBetween: 17
+      spaceBetween: 5
     },
     768: {
       slidesPerView: 4,
-      spaceBetween: 17
+      spaceBetween: 5
     },
   }
 });

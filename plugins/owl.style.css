@@ -1,0 +1,58 @@
+
+
+.owl-carousel.owl-theme .item {
+    height: 260px;
+    margin: 0px auto;
+}
+
+.owl-theme .owl-dots {
+    display: none;
+}
+
+.owl-theme .owl-nav [class*=owl-]:hover {
+    background-color: transparent;
+}
+
+
+/* positioning the arrows */
+/* ------------------------------
+    owl nav's for first slider
+--------------------------------- */
+
+.owl-next, .owl-prev {
+    position: absolute;
+}
+
+.owl-next {
+    bottom: 50%;
+    right: 10%;
+}
+
+.owl-prev {
+    bottom: 50%;
+    left: 10%;
+}
+
+
+
+/*  */
+@media screen and (max-width: 425px) {
+    .owl-nav button.owl-prev img, button.owl-next img {
+        width: 25px;
+    }
+
+    .owl-next {
+        top: 0%;
+        right: 10%;
+    }
+    
+    .owl-prev {
+        top: 0%;
+        left: 10%;
+    }
+    .owl-carousel .owl-stage-outer {
+        height: 270px;
+    }
+    
+}
+
