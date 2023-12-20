@@ -261,7 +261,7 @@ nav.active {
     opacity: 0;
 
     position: relative;
-    left: 22.8%;
+    left: 25.5%;
 
     transition: all 0.2s linear;
 
@@ -278,13 +278,13 @@ nav.active {
 
 }
 .primary-underline::after {
-    content: ""; /* Create a pseudo-element for the underline */
+    content: ""; 
     position: absolute;
     left: 0;
-    bottom: -2px; /* Adjust the distance from the text to the underline */
+    bottom: -2px; 
     width: 100%;
-    height: 2px; /* Set the underline height */
-    background-color: var(--bg-primary); /* Underline color */
+    height: 2px; 
+    background-color: var(--bg-primary); 
     
 }
 .primary-underline:hover {
