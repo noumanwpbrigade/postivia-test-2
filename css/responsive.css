@@ -45,10 +45,10 @@
  /* Hero-content */
  #hero1 {
     height: 250px ;
- }
- #hero1, #hero2 {
-    height: 130px;
-}
+    }
+ #hero1 {
+    height: 250px;
+    }
  #hero1 .container, #hero2 .container {
     position: relative;
     top: -80px;
@@ -101,7 +101,7 @@
     /* four column section */
     .four-column-section {
         position: relative;
-        bottom: 130px;
+        bottom: 200px;
     }
     /* Banner Section */
 
@@ -175,6 +175,13 @@
 /*  */
 
 @media screen and (max-width: 600px) {
+
+
+    /* utility bar */
+    .responsive-fs::after {
+        width: 0px; 
+        height: 0px;   
+    }
     main {
         padding-top: 143px;
     }
@@ -287,6 +294,10 @@
         padding-top: calc(195px - 55.96px) ;
     }
 
+    /* hero section with hero1, hero2 id's */
+    #hero2 {
+        background-image: url('../asstes/hero.svg');
+    }
 
     /* ---hero-section---  */
 
@@ -356,7 +367,9 @@
     .main-sub-right.news-wraper {
         width: 100%;
     }
-
+    .news-wraper {
+        width: 100% !important;
+    }
      /* Banner Slider */
      .banner-content {
         font-size: 24px;
@@ -486,4 +499,25 @@
     /* ============ other Utility classes end ===================== */
 
 
+}
+
+
+@media screen and (max-width: 375px) {
+    /* Hero conten */
+    .hh-span, .el {
+        font-size: 10px;
+        width: 100%;
+        padding-left: 40px;
+            }
+    .other-hh span, .positiva-p, .con  {
+        font-size: 15px;
+        }
+    
+        
+        .el, .hh-span.hh-span {
+            padding-left: 0px;
+        }
+        .hh-span:first-child {
+            padding-left:50px ;
+        }
 }

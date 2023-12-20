@@ -126,6 +126,21 @@ header {
     transition: color 0.2s ease-out;
 }
 
+.responsive-fs::after {
+    content: "";
+    display: block;
+    background-image: url('../asstes/pafter.png');
+    position: absolute;
+    top: 25px;
+    background-size: contain; /* Adjust this property as needed */
+    background-repeat: no-repeat;
+    width: 100px; /* Set the width of your image */
+    height: 10px;   
+}
+.pafter1::after{
+    margin-left: 40px;
+}
+
 .utility-bar-r p:hover, .utility-bar-r div.flex p:hover, div.flex svg {
     color: var(--bg-primary);
     cursor: pointer;
@@ -287,20 +302,10 @@ main {
     padding-top: 186px;
 }
 
-#hero1 {
+/* #hero2 {
     width: 100%;
     height: 454.77px;
-
-    background-image: url('../asstes/hero.svg');
-    background-size: 100%;
-    background-repeat: no-repeat;
-    background-position:inherit;
-
-}
-#hero2 {
-    width: 100%;
-    height: 251.77px;
-    max-height: 455px !important;
+    max-height: 455px !important; 
 
 
     background-image: url('../asstes/heroflip.png');
@@ -309,7 +314,18 @@ main {
     background-repeat: no-repeat;
     background-position:inherit;
 
+}  */
+#hero1, #hero2 {
+    width: 100%;
+    height: 454.77px; /* define height becasue of bg*/
+
+    background-image: url('../asstes/hero.svg');
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position:inherit;
+
 }
+
 
 
 .hero-heading {
@@ -484,7 +500,21 @@ main {
     color: var(--bg-primary);
     font-size: 20px;
     font-weight: 400;
+    cursor: pointer;
 }
+
+.card-title::after {
+    content: '';
+    display: block;
+    width: 8px;
+    height: 8px;
+    background-image: url('../asstes/aftercardtitle.jpg');
+    background-repeat: no-repeat;
+    position: relative;
+    top: 2px;
+    left: 50%;
+}
+
 .s-card-p {
     color: #454545;
     text-align: center;
@@ -839,7 +869,9 @@ select.drop-down {
     filter: drop-shadow(0 0 10px var(--bg-primary));
 }
 
-
+.news-wraper {
+    width: 261px !important;
+}
 .news-heading {
     color: var(--bg-primary);
     font-family: Titillium Web;
