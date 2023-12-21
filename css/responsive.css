@@ -2,7 +2,36 @@
 
 
 
+@media screen and (max-width: 895px) {
+    /* noticias */
+    .noticias {
+        flex-direction: column;
+    }
+    .noticias-div {
+        width: 100%;
+    }
+    
+    .noticias-div.flex {
+        justify-content: center;
+    }
+    .noticias-div img {
+        width: 310px;
+        margin: 0px auto;
+    }
 
+    .noticias-content {
+        width: 310px;
+    }
+
+    .noticias-btn-wraper {
+        text-align: right;
+        padding: 10px 0px;
+    }
+    .events {
+        margin-top: 10px;
+        align-self: flex-start;
+    }    
+}
 
 /*  */
 
@@ -70,34 +99,7 @@
         padding-left:50px ;
     }
 
-    /* noticias */
-    .noticias {
-        flex-direction: column;
-    }
-    .noticias-div {
-        width: 100%;
-    }
-    
-    .noticias-div.flex {
-        justify-content: center;
-    }
-    .noticias-div img {
-        width: 310px;
-        margin: 0px auto;
-    }
 
-    .noticias-content {
-        width: 310px;
-    }
-
-    .noticias-btn-wraper {
-        text-align: right;
-        padding: 10px 0px;
-    }
-    .events {
-        margin-top: 10px;
-        align-self: flex-start;
-    }
     /* four column section */
     .four-column-section {
         position: relative;
@@ -190,17 +192,6 @@
         .ml-15{
             display: none;
             }   
-    
-    .logo-bar-r-img {
-        display: none;
-        }
-
-    .burger {
-        display: flex;
-        position: absolute;
-        padding-right: 15px;
-
-        }
 
     /* Responsive Navigation CSS */
     nav {
@@ -280,20 +271,94 @@
 
 /* mobile responsive */
 
+/* on 665px active burger drop down menu */
+@media screen and (max-width: 665px) {
+    .logo-bar-r-img {
+        display: none;
+        }
+
+    .burger {
+        display: flex;
+        position: absolute;
+        padding-right: 15px;
+
+        }
+/* Responsive Navigation CSS */
+nav {
+    display: none;
+    height: 400px;
+}
+
+.nav-links {
+    flex-direction: column-reverse;
+    gap: 15px;
+}
+.nav-links:first-child, .nav-links a, .search-form {
+    border-left: none;
+    border-right: none;
+}
+/* nav-form */
+.search-form {
+    gap:25px
+}
+.search-form .input {
+    width: 80%;
+}
+
+.d-none {
+    display: block;
+    color: black;
+    font-size: 10px ;
+}
+.nav-a-container {
+    flex-direction: column;
+    gap: 18px;
+}
+.nav-a-container a {
+    justify-content: space-between;
+}
+
+/* subnavigation */
+.sub-nav {
+    flex-direction: column;
+    width: 100%;
+    gap: 10px;
+    padding: 15px 37px;
+
+    position: relative;
+    left: 0%;
+    bottom: 278px;
+
+    transition: all 0.2s linear;
+
+        /* visibility: hidden;  Change display to visibility */
+    }
+
+    /* navigation-logo Bar */
+    .mobile-logo-bar {
+        display: block;
+        margin-left: -15px;
+        padding-left: 15px;
+        width: 100vw;
+        height: 100px;
+        background-color: #fff;
+        justify-content: space-evenly;
+        position: relative;
+        padding-top: 15px;
+                    } 
+        main {
+            padding-top: calc(195px - 55.96px) ;
+        }  
+}
+
 /* @media screen and (max-width: 425px) { */
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 610px) {
 
     /* header -> utility-bar */
     .reponsive-fs {
     font-size: 9.2px !important;
 
     }
-    
-    
-    main {
-        padding-top: calc(195px - 55.96px) ;
-    }
-
     /* hero section with hero1, hero2 id's */
     #hero2 {
         background-image: url('../asstes/hero.svg');
@@ -371,6 +436,9 @@
         width: 100% !important;
     }
      /* Banner Slider */
+     .banner-slider {
+        height: 170px;
+            }
      .banner-content {
         font-size: 24px;
         padding-top: 60px;

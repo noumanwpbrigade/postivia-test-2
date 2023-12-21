@@ -10,6 +10,7 @@
     font-family: Arial, Helvetica, sans-serif;
 }
 
+
 :root {
     --bg-primary: #FF7500 ;
     --bg-secondary: #3D4E5A ;
@@ -412,23 +413,37 @@ main {
     z-index: 1000;
 }
 .swiper-slider-c {
-    min-width: 229px;
+    min-width: calc(23% - 20px);
     min-height: 179.83px;;
     background-color: var(--bg-primary);
 
     border-bottom: 5px solid #D94817;
     cursor: pointer;
-    transition: all 0.2s ease-out;
+    transition: all 0.2s linear !important;
+    flex-direction: column;
 }
-
-.swiper-slider-c:hover {
-    background-image: url('../asstes/c-card-hover.jpg');
-    background-color: cover;
-}
-.c-card {
-    /* max-width:230px !important ; */
+.c-card, {
     
+}
+.swiper-slide.swiper-slider-c {
+    /* transition: all 2s ease-out !important; */
+}
+.c-card-hover-div {
+    display: none;
+}
+.swiper-slider-c:hover  {
+    background-image: url('../asstes/c-card-hover.jpg');
+    background-size: cover;
+}
+.swiper-slider-c:hover .c-card {
+    display: none;
+}
+.swiper-slider-c:hover .c-card-hover-div {
+    display: block;
+}
 
+.c-card {
+    width: 100%;
     flex-direction: column;
     align-items: center;
     justify-content: center;
@@ -477,22 +492,22 @@ main {
     width: 100vw;
     height: auto;
     background-color: transparent;
-    margin-top: -160px !important;
+    margin-top: -140px; /* -value because hero contain extra height at bottom ->carousel */
 }
 
 .main-div .container {
     align-items: flex-start;
 }
 
-.secon-cards {
-    min-height: 200px;
-    background-color: red;
-    
-}
-
 .s-card img {
     width: 143px ;
     margin: 20px 0px;
+    filter: drop-shadow(0 0 10px gray) ;
+    cursor: pointer;
+    transition: filter 0.2s ease-out;
+}
+.s-card img:hover {
+    filter: drop-shadow(1px 1px 12px black);
 }
 
 .card-title {
@@ -523,6 +538,7 @@ main {
 .s-card-footer {
     color: var(--bg-primary);
     font-size: 14px;
+    cursor: pointer;
 }
 
 .BUSCAR {
@@ -638,8 +654,7 @@ select.drop-down {
 .buscar-submit-btn:hover,.news-letter-submit-btn:hover, .noticias-btn:hover {
     background-color: #fff;
     color: var(--bg-primary);
-    border: 1px solid var(--bg-primary);
-    
+    border: 1px solid var(--bg-primary); 
 }
 
 /* second main section  */
@@ -826,7 +841,7 @@ select.drop-down {
     background-image: url('../asstes/smskey.png');
     background-repeat: no-repeat;
     margin-right: 10px;
-    padding: 30px;
+    padding: 20px;
 }
 .news-img-content { /* just for aligning text*/
     margin-left: 220px;
@@ -935,8 +950,8 @@ select.drop-down {
 
 /* ===== Banner Slider Start */
 #btn1, #btn2, #btn3 {
-    width: 20px;
-    height: 20px;
+    width: 10px;
+    height: 10px;
     display: inline-block;
     border-radius: 50%;
     cursor: pointer;
@@ -948,7 +963,7 @@ select.drop-down {
     width: 100%;
     justify-content: center;
     position: relative;
-    top: 30px;
+    top: 60px;
 }
 /* ===== Banner Slider End */
 

@@ -1,3 +1,15 @@
+    // Mobile SubNavigation 
+
+    if (window.innerWidth < 666) {
+
+    } else {
+
+    }
+    
+    console.log(window.innerWidth); // comment
+    
+    
+    
     // Desktop SubNavigation
     var secondChild = document.getElementById('show-subnav');
     var subnav = document.getElementById('sub-nav');
@@ -12,6 +24,7 @@
         subnav.style.opacity=0;
         subnav.style.visibility= 'hidden';
     }
+
     
     // Multi-form section
 
@@ -145,5 +158,10 @@
             btn3.style.backgroundColor = "#9b9595ad"
  
     })
+
+
+
+    // code: show sub-nav on click :
+
 
 

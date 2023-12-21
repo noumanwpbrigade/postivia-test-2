@@ -160,7 +160,7 @@
                     </button>
                 </form>
             </div>
-            <div class="sub-nav flex" id="sub-nav" onmouseenter="show()" onmouseleave="hide()">
+            <div class="sub-nav flex" id="sub-nav" onmouseenter="show()" onmouseleave="hide()" onclick="if(show()) hide();">
                 <div class="sub-nav-left flex">
                     <a href="#" class="primary-underline">Quienes Somos</a>
                     <a href="#" class="primary-underline">Misión y Visión</a>
@@ -268,22 +268,35 @@
 
             <!-- 4-column-section-1  -->
             <div class="four-column-section">
-                <div class="container" id="mySwiper-p">
+                <div class="container " id="mySwiper-p ">
 
-                    <div class="swiper mySwiper1">
+                    <div class="mySwiper1">
                         <div class="swiper-wrapper">
-                            <div data-hash="slide1" class="swiper-slide swiper-slider-c">
+                            <!-- data-hash="slide1" -->
+                            <div  class="swiper-slide swiper-slider-c flex">
 
-                                <div class="c-card flex">
-                                    <img src="./asstes/Frame.png" alt="">
+                                <div class="c-card flex" >
+                                    <img src="./asstes/Frame.png" alt="" class="img-column-slider">
                                     <div class="c-card-content">
                                         <div class="c-card-text">RIESGOS LABORALES</div>
                                         <div class="c-card-bold-text">ARL</div>
                                     </div>
                                 </div>
+                                <div class="c-card-hover-div flex">
+                                    <div class="c-card-text">Vida Individual
+                                        Vida Grupo
+                                    </div>
+                                    <div class="c-card-text">
+                                        Accidentes
+                                        Personales
+                                    </div>
+
+                                    <a class="c-card-btn">VER MÁS</a>
+                                </div>
 
                             </div>
-                            <div data-hash="slide2" class="swiper-slide swiper-slider-c">
+                            <!-- data-hash="slide2" -->
+                            <!-- <div  class="swiper-slide swiper-slider-c">
 
                                 <div class="c-card flex c-card-2">
                                     <div class="c-card-text">Vida Individual
@@ -298,8 +311,31 @@
 
                                 </div>
 
+                            </div> -->
+                            <div  class="swiper-slide swiper-slider-c">
+
+                                <div class="c-card flex c-card-4">
+                                    <img src="./asstes/Frame4.png" alt="">
+                                    <div class="c-card-content">
+                                        <div class="c-card-text">OTROS </div>
+                                        <div class="c-card-bold-text">SEGUROS</div>
+                                    </div>
+                                </div>
+                                <div class="c-card-hover-div flex">
+                                    <div class="c-card-text">Vida Individual
+                                        Vida Grupo
+                                    </div>
+                                    <div class="c-card-text">
+                                        Accidentes
+                                        Personales
+                                    </div>
+
+                                    <a class="c-card-btn">VER MÁS</a>
+                                </div>
+
                             </div>
-                            <div data-hash="slide3" class="swiper-slide swiper-slider-c">
+                            <!-- slide3 -->
+                            <div class="swiper-slide swiper-slider-c">
 
                                 <div class="c-card flex">
                                     <img src="./asstes/Frame3.png" alt="">
@@ -308,9 +344,20 @@
                                         <div class="c-card-bold-text">PERSONALES</div>
                                     </div>
                                 </div>
+                                <div class="c-card-hover-div flex">
+                                    <div class="c-card-text">Vida Individual
+                                        Vida Grupo
+                                    </div>
+                                    <div class="c-card-text">
+                                        Accidentes
+                                        Personales
+                                    </div>
+
+                                    <a class="c-card-btn">VER MÁS</a>
+                                </div>
 
                             </div>
-                            <div data-hash="slide4" class="swiper-slide swiper-slider-c">
+                            <div  class="swiper-slide swiper-slider-c">
 
                                 <div class="c-card flex c-card-4">
                                     <img src="./asstes/Frame4.png" alt="">
@@ -318,6 +365,17 @@
                                         <div class="c-card-text">OTROS </div>
                                         <div class="c-card-bold-text">SEGUROS</div>
                                     </div>
+                                </div>
+                                <div class="c-card-hover-div flex">
+                                    <div class="c-card-text">Vida Individual
+                                        Vida Grupo
+                                    </div>
+                                    <div class="c-card-text">
+                                        Accidentes
+                                        Personales
+                                    </div>
+
+                                    <a class="c-card-btn">VER MÁS</a>
                                 </div>
 
                             </div>
@@ -354,9 +412,9 @@
                                         Certificados en Línea <br>
                                         Aporte a riesgos Laborales
                                     </p>
-                                    <p class="s-card-footer">
+                                    <a class="s-card-footer">
                                         + Ver otros servicios
-                                    </p>
+                                    </a>
                                 </div>
                             </div>
 
@@ -831,6 +889,29 @@
 
     <!-- custome javaScript -->
     <script src="./js/script.js"></script>
+
+    <!-- destroy slider -->
+    <script>
+        if ($('section').length) {
+			let onlyMobileSlider;
+			$(window).on("load resize", function() {
+				if (window.matchMedia('(max-width:767px)').matches === true) {
+
+					if (onlyMobileSlider?.destroyed === true || !onlyMobileSlider) {
+						onlyMobileSlider = new Swiper('.swiper-container', {
+							slidesPerView: 2,
+							loop: true,
+							pagination: {
+								el: '.swiper-pagination',
+							},
+						});
+					}
+				}else {
+					if (onlyMobileSlider !== undefined) onlyMobileSlider.destroy(true, true);
+				}
+			});
+		};
+    </script>
 
 </body>
 

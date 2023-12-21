@@ -1,41 +1,3 @@
-// noticias slider 
-// let swiperNOticias = new Swiper(".mySwipernoticias", {
-//   slidesPerView: 1,
-//   // spaceBetween: 10,
-
-//   hashNavigation: {
-//     watchState: true,
-//   },
-
-//   pagination: {
-//     el: ".swiper-pagination",
-//     clickable: true,
-//   },
-
-//   navigation: {
-//     nextEl: ".swiper-button-next-noticias",
-//     prevEl: ".swiper-button-prev-noticias",
-//   },
-
-//   breakpoints: {
-//     320: {
-//       slidesPerView: 1,
-//       spaceBetween: 5
-//     },
-//     480: {
-//       slidesPerView: 1,
-//       spaceBetween: 5
-//     },
-//     768: {
-//       slidesPerView: 1,
-//       spaceBetween: 5
-//     },
-//   }
-// });
-
-
-
-
 // Third/-companies Slider
 var swiper = new Swiper(".mySwiper", {
   spaceBetween: 30,
@@ -157,24 +119,17 @@ var swiper = new Swiper('.swiper', {
   // debugger: true,
 });
 // First Slider
-var swiper = new Swiper(".mySwiper1", {
-  slidesPerView: 1,
-  spaceBetween: 5,
-
-  hashNavigation: {
-    watchState: true,
-  },
-
+var swiper = new Swiper('.mySwiper1', {
+  // Install Plugin To Swiper
+  modules: [myPlugin],
   pagination: {
-    el: ".swiper-pagination",
+    el: '.swiper-pagination',
     clickable: true,
   },
-
   navigation: {
-    nextEl: "#swiper-button-next-1",
-    prevEl: "#swiper-button-prev-1",
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
   },
-
   breakpoints: {
     320: {
       slidesPerView: 1,
@@ -188,8 +143,49 @@ var swiper = new Swiper(".mySwiper1", {
       slidesPerView: 4,
       spaceBetween: 5
     },
-  }
+  },
+  // Enable debugger
+  // debugger: true,
 });
+
+
+
+
+// =============================================
+// var swiper = new Swiper(".mySwiper1", {
+//   slidesPerView: 1,
+//   spaceBetween: 5,
+
+//   hashNavigation: {
+//     watchState: true,
+//   },
+
+//   pagination: {
+//     el: ".swiper-pagination",
+//     clickable: true,
+//   },
+
+//   navigation: {
+//     nextEl: "#swiper-button-next-1",
+//     prevEl: "#swiper-button-prev-1",
+//   },
+
+//   breakpoints: {
+//     320: {
+//       slidesPerView: 1,
+//       spaceBetween: 5
+//     },
+//     480: {
+//       slidesPerView: 2,
+//       spaceBetween: 5
+//     },
+//     768: {
+//       slidesPerView: 4,
+//       spaceBetween: 5,
+//       clickable: false
+//     },
+//   }
+// });
 
 
 
